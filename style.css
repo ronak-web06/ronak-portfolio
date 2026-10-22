@@ -650,3 +650,34 @@ img {
         box-sizing: border-box;
     }
 }
+
+/* Mobile box spacing fix */
+@media screen and (max-width: 700px) {
+
+    .skills-grid,
+    .projects-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px !important;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 100%;
+        margin: 0;
+        padding: 22px;
+        border: 1px solid #263247;
+        border-radius: 14px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section h2 {
+        margin-bottom: 25px;
+    }
+}
