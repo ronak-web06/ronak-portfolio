@@ -635,3 +635,18 @@ img {
         font-size: 13px;
     }
 }
+
+/* Mobile par cards ke beech gap */
+@media (max-width: 700px) {
+    .skills-grid,
+    .projects-grid {
+        gap: 24px !important;
+        row-gap: 24px !important;
+    }
+
+    .skill-card,
+    .project-card {
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+}
